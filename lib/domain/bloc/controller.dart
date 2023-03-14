@@ -191,7 +191,7 @@ class VideoEditorController extends ChangeNotifier {
   }
 
   
-  void updateStartAndEndTrimValue(int start,int end)
+  void updateStartAndEndTrimValue(Duration start,Duration end)
   {
     _trimStart=start;
     _trimEnd=end;
