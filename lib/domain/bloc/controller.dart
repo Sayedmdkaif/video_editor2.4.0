@@ -190,6 +190,13 @@ class VideoEditorController extends ChangeNotifier {
     notifyListeners();
   }
 
+  
+void updateStartAndEndTrimValue(int start,int end)
+  {
+    _trimStart=start;
+    _trimEnd=end;
+    notifyListeners();
+  }  
   /// Update the [preferredCropAspectRatio] param and init/reset crop parameters [minCrop] & [maxCrop] to match the desired ratio
   /// The crop area will be at the center of the layout
   void cropAspectRatio(double? value) {
